@@ -16,11 +16,14 @@
         int subscribtion_id;
         struct FullName name;
         float month_tax;
-        float sum;        
+        float sum; 
+        bool paid;       
     };
 
     void input_client_data(struct Client *cl);
     void output_client_data(struct Client *cl);
+    void change_status(struct Client *cl);
+
 
  #endif   
     
