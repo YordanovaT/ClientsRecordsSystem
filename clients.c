@@ -19,10 +19,11 @@ int main()
     while(1)
     {
         printf("-------------------------------------- MENU --------------------------------------\n");
-        printf("Do you want to perform an operation? Choose an option 0-3.\n");
+        printf("Do you want to perform an operation? Choose an option 0-4.\n");
         printf("1. Input data for clients.\n");
         printf("2. Output data for clients.\n");
         printf("3. Change paid status for a client.\n");
+        printf("4. Output data for a client.\n");
         printf("0. Exit program.\n");
 
         scanf("%d", &choice);
@@ -65,17 +66,43 @@ int main()
            
             for(i=0; i<clients_count; i++)
             {   
-                if(subscr_id == clients->subscribtion_id)
+                if(subscr_id == clients[i].subscribtion_id)
                 {
                     printf("\n------------------------------- CHANGE CLIENT'S STATUS -------------------------------\n");
                     change_status(&clients[i]);
+                    flag=true;
                     printf("\n----------------------------------------------------------------------------------------\n");
-                }             
-                
-                           
+                }                       
             }
+            if(flag == false)
+            {
+                printf("NO EXISTING CLIENT WITH THE GIVEN SUBSCRIPTION ID\n");
+            }
+
             break;
-        
+
+        case 4:
+            
+            printf("Enter client client's subscription ID: ");
+            scanf("%d", &subscr_id);
+            
+            for(i=0; i<clients_count; i++)
+            {
+                if(subscr_id == clients[i].subscribtion_id)                 
+                {    
+                    printf("\n------------------------------- OUTPUTTING CLIENT'S DATA -------------------------------\n");
+                    output_client_data(&clients[i]);
+                    flag=true;
+                    printf("\n----------------------------------------------------------------------------------------\n");
+                }               
+            }
+            if(flag == false)
+            {
+                printf("NO EXISTING CLIENT WITH THE GIVEN SUBSCRIPTION ID\n");
+            }
+
+            break;
+            
         default:
             break;
         }
