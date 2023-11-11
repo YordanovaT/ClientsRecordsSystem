@@ -19,11 +19,12 @@ int main()
     while(1)
     {
         printf("-------------------------------------- MENU --------------------------------------\n");
-        printf("Do you want to perform an operation? Choose an option 0-4.\n");
+        printf("Do you want to perform an operation? Choose an option 0-5.\n");
         printf("1. Input data for clients.\n");
         printf("2. Output data for clients.\n");
         printf("3. Change paid status for a client.\n");
         printf("4. Output data for a client.\n");
+        printf("5. Highest month tax.\n");
         printf("0. Exit program.\n");
 
         scanf("%d", &choice);
@@ -102,7 +103,18 @@ int main()
             }
 
             break;
+        
+        case 5:
+
             
+                          
+            printf("\n---------------------------------- HIGHEST MONTH TAX ----------------------------------\n");
+            highest_month_tax(clients, clients_count);
+            printf("\n----------------------------------------------------------------------------------------\n");
+                           
+        
+            break;
+
         default:
             break;
         }

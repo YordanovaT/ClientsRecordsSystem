@@ -23,6 +23,7 @@
     void input_client_data(struct Client *cl);
     void output_client_data(struct Client *cl);
     void change_status(struct Client *cl);
+    void highest_month_tax(struct Client *cl, int num_of_clients);
 
 
  #endif   
