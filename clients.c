@@ -19,7 +19,7 @@ int main()
     while(1)
     {
         printf("-------------------------------------- MENU --------------------------------------\n");
-        printf("Do you want to perform an operation? Choose an option 0-5.\n");
+        printf("Do you want to perform an operation? Choose an option 0-7.\n");
         printf("1. Input data for clients.\n");
         printf("2. Output data for clients.\n");
         printf("3. Change paid status for a client.\n");

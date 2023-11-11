@@ -1,3 +1,5 @@
+/* Module to output the highest month tax. */
+
 #include "clients.h"
 
 void highest_month_tax(struct Client *cl, int num_of_clients)
