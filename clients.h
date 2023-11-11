@@ -25,6 +25,7 @@
     void change_status(struct Client *cl);
     void highest_month_tax(struct Client *cl, int num_of_clients);
     void sum_of_unpaid_taxes(struct Client *cl, int num_of_clients);
+    void clients_not_paid(struct Client *cl, int num_of_clients);
 
 
  #endif   
