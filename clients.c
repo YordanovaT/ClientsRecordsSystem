@@ -25,6 +25,7 @@ int main()
         printf("3. Change paid status for a client.\n");
         printf("4. Output data for a client.\n");
         printf("5. Highest month tax.\n");
+        printf("6. Sum of all unpaid taxes.\n");
         printf("0. Exit program.\n");
 
         scanf("%d", &choice);
@@ -112,6 +113,15 @@ int main()
             highest_month_tax(clients, clients_count);
             printf("\n----------------------------------------------------------------------------------------\n");
                            
+        
+            break;
+
+        case 6:
+           
+                          
+            printf("\n------------------------------- SUM OF UNPAID MONTH TAXES -------------------------------\n");
+            sum_of_unpaid_taxes(clients, clients_count);
+            printf("\n----------------------------------------------------------------------------------------\n");       
         
             break;
 
