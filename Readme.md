@@ -1,6 +1,6 @@
 # Records Management System for Clients
 
-## The system is built using C++ and is form of exercising structs 
+## The system is built using C and is form of exercising structs 
 The system provides the following fuctionalities:  
 
    * #### Input data for clients  
