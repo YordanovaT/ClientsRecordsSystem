@@ -18,5 +18,5 @@ void highest_month_tax(struct Client *cl, int num_of_clients)
         }
     }
 
-    printf("The highest month tax is: %f. It belongs to the client with sibscription ID: %d\n", highest_tax, id);
+    printf("The highest month tax is: %.2f. It belongs to the client with sibscription ID: %d\n", highest_tax, id);
 }

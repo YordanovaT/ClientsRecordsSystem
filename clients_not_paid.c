@@ -9,7 +9,7 @@ void clients_not_paid(struct Client *cl, int num_of_clients)
     {
         if(!cl[i].paid)
         {
-            printf("\nSubscription ID: %d \t Name: %s %s \t Month tax: %f", 
+            printf("\nSubscription ID: %d \t Name: %s %s \t Month tax: %.2f", 
             cl[i].subscribtion_id, cl[i].name.first_name, cl[i].name.last_name, cl[i].month_tax);
             printf("\n\n----------------------------------------------------------------------------------------\n");
         }

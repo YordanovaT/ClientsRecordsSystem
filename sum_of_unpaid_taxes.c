@@ -15,5 +15,5 @@ void sum_of_unpaid_taxes(struct Client *cl, int num_of_clients)
         }
     }
 
-    printf("The sum of all unpaid month taxes is: %f\n", unpaid_sum);
+    printf("The sum of all unpaid month taxes is: %.2f\n", unpaid_sum);
 }
